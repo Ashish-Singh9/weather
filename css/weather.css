@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 105%;
+}
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width:420px ;
+}
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.3em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: 82%;
+    text-transform: capitalize;
+}
+#btnSearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.7em;
+    width: 2.7em;
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+#btnSearch:hover{
+    background: #7c7c7c6b;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+.isLoading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.isLoading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.city{
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#icon{
+    margin-left: -11px;
+}
+#description{
+    text-transform: capitalize;
+}
+.temp{
+    margin: 0;
+   
+}
